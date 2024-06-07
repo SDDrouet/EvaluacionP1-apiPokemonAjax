@@ -130,11 +130,11 @@ button:hover {
 }
 
 /* Estilo específico para el botón de aplicar filtros */
-#applyFilters {
+#resetFilters {
     background-color: #f44336; /* Color de fondo rojo */
 }
 
-#applyFilters:hover {
+#resetFilters:hover {
     background-color: #d42013; /* Color de fondo rojo */
 }
 
@@ -155,6 +155,7 @@ button:hover {
 
 /* Estilo para el select de filtros */
 .filter {
+    width: 40%;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -179,3 +180,55 @@ button:hover {
 #pageInfo {
     margin: 0 10px;
 }
+
+.number {
+    width: 100px;
+}
+
+.pokeBlock table {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.pokeBlock td {
+    width: 50%;
+    margin: auto;
+    text-align: left;
+    vertical-align: top;
+}
+
+
+/* Estilos para la barra de progreso */
+progress {
+    display: block;
+    width: 50%;
+    height: 20px; /* Altura de la barra de progreso */
+    border: 1px solid #ccc; /* Borde de la barra de progreso */
+    border-radius: 4px; /* Borde redondeado */
+    overflow: hidden;
+    background-color: #f1f1f1; /* Color de fondo de la barra de progreso */
+  }
+  
+  /* Estilos para la barra de progreso (sólo en WebKit/Blink) */
+  progress::-webkit-progress-bar {
+    background-color: #f1f1f1;
+  }
+  
+  /* Estilos para la parte llena de la barra de progreso (sólo en WebKit/Blink) */
+  progress::-webkit-progress-value {
+    background-color: #4CAF50; /* Color de la parte llena de la barra de progreso */
+  }
+  
+  /* Estilos para la barra de progreso en Firefox */
+  progress {
+    /* Firefox ocupa todo el espacio de la barra con color de fondo */
+    background-color: #f1f1f1;
+  }
+  
+  /* Estilos para la parte llena de la barra de progreso en Firefox */
+  progress[value] {
+    /* Firefox usa gradientes para la parte llena de la barra de progreso */
+    background-color: #4CAF50;
+  }

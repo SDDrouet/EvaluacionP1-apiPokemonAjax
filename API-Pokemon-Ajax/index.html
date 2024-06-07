@@ -20,21 +20,22 @@
         <div class="filters">
             <select class="filter" id="typeFilter">
                 <option value="">All Types</option>
-                <!-- Se añada los pokemons de forma dinámica segun el filtro -->
+                <!-- Opciones de tipo se añadirán dinámicamente aquí -->
             </select>
-
-            <select class="filter" id="colorFilter">
-                <option value="">All Colors</option>
-                <!-- Colors will be populated here -->
+            
+            <select class="filter" id="abilityFilter">
+                <option value="">All Abilities</option>
+                <!-- Opciones de habilidades se añadirán dinámicamente aquí -->
             </select>
-        
-            <select class="filter" id="habitatFilter">
-                <option value="">All Habitats</option>
-                <!-- Habitats will be populated here -->
-            </select>
-        
+            <br><br>
+            <input class="filter number" type="number" name="heightFilter" id="heightFilter" placeholder="Min Height" min="1">
+            <input class="filter number" type="number" name="hpFilter" id="hpFilter" placeholder="Min HP" min="1">
+            <input class="filter number" type="number" name="attackFilter" id="attackFilter" placeholder="Min Attack" min="1">
+            <input class="filter number" type="number" name="defenseFilter" id="defenseFilter" placeholder="Min Def" min="1">
+            <br><br>
                         
-            <button id="applyFilters">Apply Filters</button>
+            <button class="filter" id="applyFilters">Apply Filters</button>
+            <button class="filterReset" id="resetFilters">Reset</button>
         </div>
         <div class="pagination">
             <button id="prevPage">Previous</button>
@@ -42,11 +43,12 @@
             <button id="nextPage">Next</button>
         </div>
         <div id="pokemonContainer" class="pokemon-container">
+            
             <!-- se añada cada pokemon -->
         </div>
     </div>
     
-y    <script src="js/loadPokemons.js"></script>
+    <script src="js/loadPokemons.js"></script>
 </body>
 
 </html>
