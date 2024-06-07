@@ -1,18 +1,42 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokemon</title>
-
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
+
 <body>
-    <h1>Pokemon</h1>
-    <input type="text" id="search" placeholder="Buscar pokemon">
-    <button id="search-button">¡Yo te elijo!</button>
-    <div id="pokemon"></div>
-    <script src="js/script.js"></script>
+    <div class="container">
+        <h1>Pokémon Search</h1>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for a Pokémon">
+            <button id="searchButton">Search</button>
+        </div>
+        <div class="filters">
+            <select id="typeFilter">
+                <option value="">All Types</option>
+                <!-- Se añada los pokemons de forma dinámica segun el filtro -->
+            </select>
+        
+                        
+            <button id="applyFilters">Apply Filters</button>
+        </div>
+        <div class="pagination">
+            <button id="prevPage">Previous</button>
+            <span id="pageInfo">Page 1</span>
+            <button id="nextPage">Next</button>
+        </div>
+        <div id="pokemonContainer" class="pokemon-container">
+            <!-- se añada cada pokemon -->
+        </div>
+    </div>
+    
+y    <script src="js/loadPokemons.js"></script>
 </body>
+
 </html>

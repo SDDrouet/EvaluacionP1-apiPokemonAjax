@@ -1,0 +1,181 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Aplica Roboto como la fuente principal */
+  }
+  
+  /* Puedes ajustar el tamaño de fuente y otros estilos según sea necesario */
+  button, select, h1, h2, h3 {
+    font-family: 'Roboto', sans-serif; /* También aplica Roboto a los encabezados */
+  }
+
+
+  
+  
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.filters {
+    margin-bottom: 20px;
+}
+
+.pagination {
+    margin-bottom: 20px;
+}
+
+.pokemon-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre tarjetas */
+  }
+  
+  .pokemon-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Define 3 columnas de igual tamaño */
+    gap: 15px; /* Espacio entre columnas y filas */
+    background-color: #e2e8e9;
+    border: 3px solid #444;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Espacio inferior entre tarjetas */
+    width: 100%;
+  }
+  
+  .pokeimg img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+  }
+
+  .pokeBlock {
+    background-color: #fff;
+    border: 3px solid #444;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .pokeBlock > strong {
+    margin-top: 10px;
+    display: block;
+  }
+  
+  .pokeName {
+    text-align: center;
+    margin-top: 10px; /* Espacio superior del nombre */
+    margin-bottom: 15px; /* Espacio inferior del nombre */
+  }
+  
+  .pokeInfo {
+    margin: 10px; /* Espacio inferior de cada línea de información */
+    text-align: left;
+  }
+  
+  .pokeInfo strong {
+    margin-right: 5px; /* Espacio a la derecha del texto en negrita */
+  }
+
+  hr {
+    border: 2px solid #444;
+ }
+
+ 
+  /* Media query para dispositivos móviles */
+  @media (max-width: 768px) {
+    .pokemon-card {
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+        margin: auto;
+        width: 70%;
+      }
+  }
+
+
+  /* Estilo base para los botones */
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color de texto blanco */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilo cuando el cursor está sobre el botón */
+button:hover {
+    background-color: #45a049; /* Cambio de color de fondo al pasar el cursor */
+}
+
+/* Estilo específico para el botón de búsqueda */
+#searchButton {
+    background-color: #2196F3; /* Color de fondo azul */
+}
+
+#searchButton:hover {
+    background-color: #2685d3; /* Color de fondo azul */
+}
+
+/* Estilo específico para el botón de aplicar filtros */
+#applyFilters {
+    background-color: #f44336; /* Color de fondo rojo */
+}
+
+#applyFilters:hover {
+    background-color: #d42013; /* Color de fondo rojo */
+}
+
+
+/* Estilo para el contenedor de búsqueda */
+.search-bar {
+    margin-bottom: 20px;
+}
+
+/* Estilo para el input de búsqueda */
+#searchInput {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo para el select de filtros */
+#typeFilter {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo para la paginación */
+.pagination {
+    margin-top: 20px;
+}
+
+/* Estilo para los botones de paginación */
+.pagination button {
+    background-color: #008CBA; /* Color de fondo azul claro */
+}
+
+.pagination button:hover {
+    background-color: #07a4d8; /* Color de fondo azul claro */
+}
+
+/* Estilo para el span de información de la página */
+#pageInfo {
+    margin: 0 10px;
+}
