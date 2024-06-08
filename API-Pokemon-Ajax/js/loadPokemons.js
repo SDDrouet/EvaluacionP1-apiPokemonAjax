@@ -73,6 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     return fetch(pokemon.url)
                         .then(response => response.json())
                         .then(pokemonData => {
+                            
                             allPokemon.push(pokemonData);
                             filteredPokemon.push(pokemonData);
                             completedRequests++;
